@@ -1,5 +1,5 @@
 import "../styles/About.css";
-import '../assets/gear5.jpg';
+import gear5Image from '../assets/gear5.jpg';
 
 function About() {
   return (
