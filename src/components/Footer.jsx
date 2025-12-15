@@ -28,13 +28,11 @@ const Footer = () => {
         <h4>Contact & Branches</h4>
         <p>Head Office: 01-5916252 | 9851273832</p>
         <p>Kumaripati Office: +977 1-5920463 | 980326136</p>
-        <p>Itahari Office: 025-590922 | 9851082363</p>
         <p>Chitwan Office: 056-510672 | 9762345067</p>
-        <p>Canada Office: +1 (437) 980-8720</p>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 Goreto Education Consultancy. All rights reserved.</p>
+        <p>&copy; 2025 EduNepal Education Consultancy. All rights reserved.</p>
       </div>
     </footer>
   );

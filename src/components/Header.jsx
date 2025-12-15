@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.css";
 
 function Header() {
@@ -16,21 +16,24 @@ function Header() {
           Edu<span>Nepal</span>
         </div>
 
-        <div
-          className={`hamburger ${menuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-        >
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
 
         <ul className={`nav-links ${menuOpen ? "mobile-active" : ""}`}>
-          <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li><Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-          <li><Link to="/destinations" onClick={() => setMenuOpen(false)}>Destinations</Link></li>
-          <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+          {["/", "/about", "/services", "/destinations", "/contact"].map((path) => (
+            <li key={path}>
+              <NavLink
+                to={path}
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {path === "/" ? "Home" : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

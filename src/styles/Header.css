@@ -6,7 +6,7 @@
 
 header {
   width: 100%;
-  background: linear-gradient(to right, #4b1d9e, #1e3cba);
+  background: linear-gradient(to right, #350061, #005658);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -95,5 +95,42 @@ header {
 
   .nav-links.mobile-active {
       display: flex;
+  }
+}
+
+
+/* Add to existing Header.css */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 }

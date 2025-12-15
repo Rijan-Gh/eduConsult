@@ -1,0 +1,275 @@
+/* Home.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #1e3cba;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .hero-img {
+    flex: 1;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #4b1d9e, #1e3cba);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(75, 29, 158, 0.3);
+  }
+  
+  .services {
+    padding: 80px 20px;
+    background: #f8f9fa;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    color: #1e3cba;
+    margin-bottom: 50px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-card h3 {
+    color: #1e3cba;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  
+  .service-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .destinations {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .destinations h2 {
+    font-size: 2.5rem;
+    color: #1e3cba;
+    margin-bottom: 50px;
+  }
+  
+  .dest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dest-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .dest-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .dest-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .dest-card h3 {
+    padding: 20px;
+    background: white;
+    margin: 0;
+    color: #1e3cba;
+  }
+  
+  .why-us {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+  }
+  
+  .why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .why-us span {
+    color: #ffb400;
+  }
+  
+  .why-us .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .why-us .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .why-us .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffb400;
+  }
+  
+  .testimonials {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f9fa;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    color: #1e3cba;
+    margin-bottom: 50px;
+  }
+  
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testi-card {
+    background: rgb(221, 221, 221);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+  }
+  
+  .testi-card p {
+    font-style: italic;
+    color: #5d5d5d;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .testi-card span {
+    color: #1e3cba;
+    font-weight: bold;
+  }
+  
+  .contact-cta {
+    margin: 200px 20px 100px 20px;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #cdcdcd;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-cta{
+    background: rgb(221, 221, 221);
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .contact-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    
+    .hero-text {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-img img {
+      max-height: 300px;
+    }
+    
+    .services h2,
+    .destinations h2,
+    .why-us h2,
+    .testimonials h2,
+    .contact-cta h2 {
+      font-size: 2rem;
+    }
+  }

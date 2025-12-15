@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Destinations from "./pages/Destinations";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import './App.css';
 
 
 function App() {

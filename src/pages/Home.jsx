@@ -1,3 +1,5 @@
+
+import '../styles/home.css';
 function Home() {
     return (
       <>
@@ -8,14 +10,11 @@ function Home() {
               Trusted education consultancy helping Nepali students study in Canada,
               USA, UK, and Australia.
           </p>
-          <a href="contact.html" class="cta-btn">Book Free Consultation</a>
+          <a href="/Contact" class="cta-btn">Book Free Consultation</a>
           </div>
   
           <div class="hero-img">
-          <img
-              src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=900"
-              alt=""
-          />
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=900" alt=""/>
           </div>
           </section>
   
@@ -126,7 +125,7 @@ function Home() {
           <section id="contact" class="contact-cta">
           <h2>Ready to Start Your Journey?</h2>
           <p>Book a free consultation with our expert counsellors.</p>
-          <a href="contact.html" class="cta-btn">Contact Us</a>
+          <a href="/Contact" class="cta-btn">Contact Us</a>
           </section>
       </>
   
