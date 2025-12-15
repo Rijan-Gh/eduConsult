@@ -82,7 +82,7 @@ function Services() {
       <div className="services-cta">
         <h3>Ready to Begin Your Journey?</h3>
         <p>Get expert guidance for your international education goals</p>
-        <a href="/contact" className="cta-button">Book Free Consultation</a>
+        <a href="/#/contact" className="cta-button">Book Free Consultation</a>
       </div>
     </section>
   );

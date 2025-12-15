@@ -10,7 +10,7 @@ function Home() {
               Trusted education consultancy helping Nepali students study in Canada,
               USA, UK, and Australia.
           </p>
-          <a href="/Contact" class="cta-btn">Book Free Consultation</a>
+          <a href="/eduConsult/#/Contact" class="cta-btn">Book Free Consultation</a>
           </div>
   
           <div class="hero-img">
@@ -125,7 +125,7 @@ function Home() {
           <section id="contact" class="contact-cta">
           <h2>Ready to Start Your Journey?</h2>
           <p>Book a free consultation with our expert counsellors.</p>
-          <a href="/Contact" class="cta-btn">Contact Us</a>
+          <a href="/#/Contact" class="cta-btn">Contact Us</a>
           </section>
       </>
   

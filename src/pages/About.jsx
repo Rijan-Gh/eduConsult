@@ -236,8 +236,8 @@ function About() {
           through EduNepal's expert guidance.
         </p>
         <div className="cta-buttons">
-          <a href="/contact" className="cta-btn primary">Book Free Consultation</a>
-          <a href="/destinations" className="cta-btn secondary">Explore Destinations</a>
+          <a href="/#/contact" className="cta-btn primary">Book Free Consultation</a>
+          <a href="/#/destinations" className="cta-btn secondary">Explore Destinations</a>
         </div>
       </div>
     </section>

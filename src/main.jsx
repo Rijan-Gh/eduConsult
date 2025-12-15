@@ -1,14 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
+// main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
+import App from './App'
 
-const basename = import.meta.env.PROD ? "/eduConsult" : "/";
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter basename={basename}>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <HashRouter>
       <App />
-    </BrowserRouter>
-  </StrictMode>
-);
+    </HashRouter>
+  </React.StrictMode>
+)
