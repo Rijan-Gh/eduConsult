@@ -20,16 +20,24 @@
 | HTML/CSS   | Layout & Styling |
 | JavaScript | Application Logic |
 
+
+📁 Project Structure
+
+    eduConsult/
+    ├── public/              # Static assets
+    ├── src/                 # React source code
+    │   ├── assets/          # Images & icons
+    │   ├── components/      # UI components
+    │   └── App.jsx
+    │   └── main.jsx
+    ├── .gitignore
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    └── README.md
+
+
 ## 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/rijan-gh/eduConsult.git
-cd eduConsult
-  
-
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
